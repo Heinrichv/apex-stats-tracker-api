@@ -24,9 +24,10 @@ app.get('/api/v1/stats/:platform/:username', function (req, res) {
   })
 });
 
-app.get('/', function (req, res) {
+app.get('/api', function (req, res) {
   res.json([{
     url: '/api/v1/stats/:platform/:username',
+    version: 'v1',
     headers: [
       'Accept'
     ],
