@@ -1,0 +1,21 @@
+{
+  "name": "apex-stats-tracker",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "body-parser": "~1.18.3",
+    "compression": "~1.7.3",
+    "cors": "~2.8.5",
+    "express": "~4.16.4",
+    "path": "~0.12.7",
+    "request": "~2.88.0",
+    "typescript": "~3.2.2"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
+  }
+}
