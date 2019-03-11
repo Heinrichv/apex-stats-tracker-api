@@ -24,6 +24,26 @@ app.get('/api/v1/stats/:platform/:username', function (req, res) {
   })
 });
 
+app.get('/', function (req, res) {
+  res.json([{
+    url: '/api/v1/stats/:platform/:username',
+    headers: [
+      'Accept'
+    ],
+    request: {
+      params: [{
+          name: 'platform',
+          type: 'number'
+        },
+        {
+          name: 'username',
+          type: 'string'
+        }
+      ]
+    }
+  }]);
+});
+
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080, (res) => {
 
